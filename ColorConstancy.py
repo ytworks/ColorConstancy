@@ -12,7 +12,7 @@ def ColorConstancy(img_file):
     rgb_vec = 1.0 / rgb_vec
     img = np.multiply(img.astype(np.float32), rgb_vec)
     return img
-    
+
 if __name__ == '__main__':
     cv2.imwrite('ISIC_0012221_adjusted.jpg', ColorConstancy('ISIC_0012221.jpg'))
     cv2.imwrite('ISIC_0012222_adjusted.jpg', ColorConstancy('ISIC_0012222.jpg'))
